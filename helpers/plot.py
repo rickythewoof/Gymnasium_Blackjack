@@ -32,7 +32,7 @@ def create_q_table_subplots(filename, agent):
             cmap="coolwarm",
             xticklabels=dealer_card_range,
             yticklabels=player_sum_range,
-            cbar=False # Remove heatmap legend
+            cbar=False
         )
         axes[i].set_title(f"Optimal Policy - Playable Ace: {playable_ace}")
         axes[i].set_xlabel("Dealer's Showing Card")

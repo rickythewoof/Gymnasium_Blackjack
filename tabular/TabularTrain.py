@@ -17,7 +17,6 @@ def train(agent, env, n_episodes):
             ep_rew += reward
 
             state = next_state
-        agent.update(state, action, reward, next_state, done)
         agent.decay_epsilon()
         episode_rewards.append(ep_rew)
     return episode_rewards

@@ -121,7 +121,7 @@ class BlackjackDQN:
         # Compute target Q-values
         with torch.no_grad():
             next_q_values = self.target_network(next_states).max(1)[0].unsqueeze(1)
-            target_q_values = rewards + self.lr * next_q_values * (1 - dones)
+            target_q_values = rewards + next_q_values * (1 - dones)
 
         # Compute loss and update the network
         loss = F.mse_loss(q_values, target_q_values)
