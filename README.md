@@ -14,9 +14,9 @@ the Deep Q-Learning ones. In out are present both files from the dql and tabular
 
 ## Installing Requirements
 ### Using pip
-Create a new virtual environment: `python -m venv env`
-Activate it: `source env/bin/activate` (Linux/Mac) or `env\Scripts\activate` (Windows)
-Install packages from `requirements.txt`: `pip install -r requirements.txt`
+1. Create a new virtual environment: `python -m venv env`
+2. Activate it: `source env/bin/activate` (Linux/Mac) or `env\Scripts\activate` (Windows)
+3. Install packages from `requirements.txt`: `pip install -r requirements.txt`
 
 ## Notes
 - Make sure you have the latest version of pip installed by running `pip install --upgrade pip`
